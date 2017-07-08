@@ -89,6 +89,11 @@ textarea {
    ========================================================================== */
 
 
+.pfc img
+{
+  width: 80px;;
+  background-image: url("img/ciseau.jpeg");
+}
 
 
 

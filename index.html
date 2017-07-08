@@ -1,17 +1,19 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Pierre & Feuille & Ciseaux</title>
+        <meta name="description" content="Jeux Pierre Feuille et Ciseaux">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -20,7 +22,22 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.;;;;;;;</p>
+
+      <div class="pfc">
+        <!-- <button type="button" class="btn btn-primary">ciseaux<img class="foto" src="img/ciseau.jpeg" alt="ciseau"></button>
+        <button type="button" class="btn btn-primary">pierre<img class="foto" src="img/pierre.jpeg" alt="pierre"></button>
+        <button type="button" class="btn btn-primary">feuille<img class="foto" src="img/feuille.jpeg" alt="feuille"></button> -->
+        <button class="btn btn-warning btn-lg">pierre</button>
+        <button class="btn btn-danger btn-lg">feuille</button>
+      <button class="btn btn-success btn-lg">ciseaux</button>
+        <div class="resultat"></div>
+      </div>
+
+
+
+
+
+
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -32,5 +49,7 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/boostrap.min.js"></script>
     </body>
 </html>
