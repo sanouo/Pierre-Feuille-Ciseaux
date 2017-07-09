@@ -87,18 +87,61 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header
+{
+  text-align: center;
+  background-color: #FBD033;
+}
 
+header h1
+{
+  font-family: 'Pacifico', cursive;
+  padding: 13px;
+}
+
+.utilisateur
+{
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  margin-left: 1em;
+}
+
+.pfc
+{
+  display: flex;
+  justify-content: center;
+
+}
 
 .pfc img
 {
-  width: 80px;;
-  background-image: url("img/ciseau.jpeg");
+  width: 90px;
+  margin-left: 2em;
 }
 
+.picture img
+{
+  width: 20%;
 
+}
 
+.picture
+{
+  display: flex;
+  justify-content: space-between;
+}
 
+.picture .versus
+{
+  width: 15%;
+  height: 150px;
+  margin-top: 6em;
+}
 
+.tonbou
+{
+  background-color: white;
+}
 
 
 

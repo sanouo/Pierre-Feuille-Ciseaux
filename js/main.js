@@ -1,5 +1,6 @@
 var choix = document.querySelectorAll("button");
 var utilisateur = prompt("Entrez votre pseudo");
+document.querySelector(".utilisateur").innerHTML = ` ${utilisateur} `;
  for (let i = 0; i < choix.length; i++){
  choix[i].addEventListener("click", function() {
    var joueur = choix[i].innerHTML;
@@ -7,8 +8,8 @@ var utilisateur = prompt("Entrez votre pseudo");
    var resultat;
      if (joueur === ordinateur)
        resultat = "Vous avez fait une egalité !";
-     else if ((joueur === "Pierre" && ordinateur === "Ciseaux") || (joueur === "Feuille" && ordinateur === "Pierre") || (joueur === "Ciseaux" && ordinateur === "Feuille"))
-       resultat = "Vous avez gagné !!";
+     else if ((joueur === "pierre" && ordinateur === "ciseaux") || (joueur === "feuille" && ordinateur === "pierre") || (joueur === "ciseaux" && ordinateur === "feuille"))
+       resultat = "Vous avez gagné !";
     else
        resultat = "Vous avez perdu !";
 document.querySelector(".resultat").innerHTML = `
