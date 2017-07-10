@@ -12,24 +12,27 @@ document.querySelector(".utilisateur").innerHTML = utilisateur;
 var ordinateur =  boutonOrdinateur.firstElementChild.alt;
 var image =  boutonOrdinateur.innerHTML;
 
+
+
+
 var resultatjoueur=0;
 var resultatordi=0;
 
        if (joueur === ordinateur){
-           resultat = "egalite";
+           resultat = "Egalite";
        }
          else if (joueur === "ciseau"){
           if (ordinateur === "pierre"){
          resultatordi++; resultat = "Ordinateur a gagne";
           }
            else {
-         resultatjoueur++; resultat = "joueur a gagne";
+         resultatjoueur++; resultat = "Joueur a gagne";
            }
          }
 
          else if (joueur === "feuille"){
           if (ordinateur === "pierre"){
-          resultatjoueur++; resultat = "joueur a gagne";
+          resultatjoueur++; resultat = "Joueur a gagne";
           }
            else {
           resultatordi++; resultat = "Ordinateur a gagne";
@@ -38,7 +41,7 @@ var resultatordi=0;
 
          else if (joueur === "pierre"){
           if (ordinateur === "ciseau"){
-          resultatjoueur++; resultat = "joueur a gagne";
+          resultatjoueur++; resultat = "Joueur a gagne";
           }
            else {
           resultatordi++;  resultat = "Ordinateur a gagne";
