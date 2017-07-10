@@ -1,69 +1,75 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Pierre & Feuille & Ciseaux</title>
-        <meta name="description" content="Jeux Pierre Feuille et Ciseaux">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pierre & Feuille & Ciseaux</title>
+    <meta name="description" content="Jeux Pierre Feuille et Ciseaux">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lte IE 9]>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
 
-<header>
-  <h1>Shifumi</h1>
-</header>
+    <header>
+        <h1>Shifumi</h1>
+    </header>
 
-<div class="utilisateur">
-
-</div>
+    <div class="utilisateur"></div>
 
 
-      <div class="pfc">
-        <button class="btn btn-lg tonbou"><img class="foto" src="img/pierre.jpeg" alt="pierre"></button>
-        <button class="btn btn-lg tonbou"><img class="foto" src="img/feuille.jpeg" alt="feuille"></button>
-        <button class="btn btn-lg tonbou"><img class="foto" src="img/ciseau.jpeg" alt="ciseau"></button>
-        <div class="resultat"></div>
-      </div>
+    <div class="pfc">
+        <button class="pierre" class="btn btn-lg tonbou"><img class="foto" src="img/pierre.jpeg" alt="pierre"></button>
+        <button class="feuille" class="btn btn-lg tonbou"><img class="foto" src="img/feuille.jpeg" alt="feuille"></button>
+        <button class="ciseaux" class="btn btn-lg tonbou"><img class="foto" src="img/ciseau.jpeg" alt="ciseau"></button>
+    </div>
 
+    <div class="resultat"></div>
 
-
- <div class="picture">
-   <img src="img/naruto.jpeg" alt="image manga">
-   <img  class="versus" src="img/vs.jpeg" alt="logo versus">
-   <img src="img/sangoku.png" alt="image manga">
- </div>
+    <div class="picture">
+        <img src="img/naruto.jpeg" alt="image manga">
+        <img class="versus" src="img/vs.jpeg" alt="logo versus">
+        <img src="img/sangoku.png" alt="image manga">
+    </div>
 
 
 
 
+    <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/boostrap.min.js"></script>
+</body>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/boostrap.min.js"></script>
-    </body>
 </html>
