@@ -11,7 +11,7 @@ document.querySelector(".utilisateur").innerHTML = utilisateur;
    var resultat;
 var ordinateur =  boutonOrdinateur.firstElementChild.alt;
 var image =  boutonOrdinateur.innerHTML;
-
+ 
 
 
 
