@@ -6,7 +6,7 @@ document.querySelector(".utilisateur").innerHTML = utilisateur;
 
  for (let i = 0; i < choix.length; i++){
  choix[i].addEventListener("click", function() {
-   var joueur = choix[i].className;
+   var joueur = choix[i].className
    var boutonOrdinateur = choix[Math.floor(Math.random() * choix.length)];
    var resultat;
 var ordinateur =  boutonOrdinateur.firstElementChild.alt;
@@ -14,14 +14,15 @@ var image =  boutonOrdinateur.innerHTML;
 
 
 
-
 var resultatjoueur=0;
 var resultatordi=0;
+
+
 
        if (joueur === ordinateur){
            resultat = "Egalite";
        }
-         else if (joueur === "ciseau"){
+         else if (joueur === "ciseaux"){
           if (ordinateur === "pierre"){
          resultatordi++; resultat = "Ordinateur a gagne";
           }
@@ -40,7 +41,7 @@ var resultatordi=0;
          }
 
          else if (joueur === "pierre"){
-          if (ordinateur === "ciseau"){
+          if (ordinateur === "ciseaux"){
           resultatjoueur++; resultat = "Joueur a gagne";
           }
            else {
@@ -49,7 +50,7 @@ var resultatordi=0;
        }
 
 document.querySelector(".resultat").innerHTML = `
-${image}
+${joueur}
 ${resultat}
 ${image}
 `;
