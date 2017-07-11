@@ -6,11 +6,12 @@ document.querySelector(".utilisateur").innerHTML = utilisateur;
 
  for (let i = 0; i < choix.length; i++){
  choix[i].addEventListener("click", function() {
-   var joueur = choix[i].className
+   var joueur = choix[i].firstElementChild.alt;
    var boutonOrdinateur = choix[Math.floor(Math.random() * choix.length)];
    var resultat;
 var ordinateur =  boutonOrdinateur.firstElementChild.alt;
 var image =  boutonOrdinateur.innerHTML;
+
 
 
 
