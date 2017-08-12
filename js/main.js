@@ -9,6 +9,7 @@ var resultatordi= 0;
 
 document.querySelector(".utilisateur").innerHTML = utilisateur;
 
+
  for (let i = 0; i < choix.length; i++){
  choix[i].addEventListener("click", function() {
    var joueur = choix[i].firstElementChild.alt;
@@ -52,8 +53,8 @@ function jeux (){
        }
 
 }
-jeux();
 
+jeux();
 
 
 
