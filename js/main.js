@@ -1,6 +1,11 @@
 var choix = document.querySelectorAll("button");
 var utilisateur = prompt("Entrez votre pseudo");
 
+var resultatjoueur= 0;
+var resultatordi= 0;
+
+
+
 
 document.querySelector(".utilisateur").innerHTML = utilisateur;
 
@@ -11,13 +16,9 @@ document.querySelector(".utilisateur").innerHTML = utilisateur;
    var resultat;
 var ordinateur =  boutonOrdinateur.firstElementChild.alt;
 var image =  boutonOrdinateur.innerHTML;
- 
+var tof = choix[i].innerHTML;
 
-
-
-var resultatjoueur=0;
-var resultatordi=0;
-
+function jeux (){
 
 
        if (joueur === ordinateur){
@@ -50,8 +51,17 @@ var resultatordi=0;
            }
        }
 
+}
+jeux();
+
+
+
+
+ document.querySelector(".resultatjoueur").innerHTML = resultatjoueur;
+ document.querySelector(".resultatordi").innerHTML = resultatordi;
+
 document.querySelector(".resultat").innerHTML = `
-${joueur}
+${tof}
 ${resultat}
 ${image}
 `;

@@ -99,11 +99,22 @@ header h1
   padding: 13px;
 }
 
-.utilisateur
+.utilisateur , .resultatjoueur , .resultatordi
 {
   font-size: 40px;
   font-family: 'Pacifico', cursive;
   margin-left: 1em;
+}
+
+.resultatjoueur , .resultatordi
+{
+  color: red;
+}
+
+.sco
+{
+  display: flex;
+  justify-content: space-around;
 }
 
 .pfc
